@@ -1,0 +1,132 @@
+/*Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)*/
+@import url("https://fonts.google.com/specimen/Outfit");
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-card-bg: hsl(216, 50%, 16%);
+    --Very-dark-blue-main-bg: hsl(217, 54%, 11%);
+    --Very-dark-blue: hsl(215, 32%, 27%);
+    --White:hsl(0, 0%, 100%);
+
+}
+
+        *,
+        *::after,
+        *::before {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+            font-family: 'Outfit';
+        }
+
+        body {
+            background-color: var(--Very-dark-blue-main-bg);
+            padding: 30px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+
+        .main-card {
+            background-color: var(--Very-dark-blue-card-bg);
+            border-radius: 8px;
+            width: 300px;
+            height: 530px;
+            padding: 20px;
+            margin:auto;
+            font-family: "Outfit";
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        }
+       
+        .image-equilibrium:hover{
+            color: var(--Cyan);
+        }
+        
+        .img{
+            height:150%;
+            width:100%;
+            padding:content;
+        }       
+
+
+.title-section{
+    color:var(--White);
+    font-size:14px;
+    text-decoration: none;       
+}
+.title-section h1:hover{
+    color: var(--Cyan);
+}
+
+.para{
+    color:var(--Soft-blue);
+    font-size:12pt;
+    text-decoration: none;
+}
+
+
+.price-section{
+    padding: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price  h2{
+    color:var(--Cyan);
+    font-size: 1rem;
+}
+
+.icon-clock{
+    padding:0%;
+    display: flex;
+    justify-content: space-between;   
+}
+.days{
+    color: var(--Soft-blue);
+    font-size: small;   
+}
+section{
+    display: flex;
+    justify-content: space-between;    
+}
+hr{
+    border-top: 1px solid var(--Cyan);    
+}
+.profile{    
+    display: flex;
+    padding:0%;
+    
+}
+
+.creator img{
+    width:30%;
+    height:auto;
+    padding:0%;
+}
+
+.white-text h4{
+    color: var(--Soft-blue);
+}
+.white-text a{
+    text-decoration: none;
+    color: var(--White);
+}
+.white-text a:hover{
+    color: var(--Cyan);
+}
+.creator .white-text{
+    justify-content:right; 
+}
+.attribution{
+    font-size: 60%;
+    color:var(--White);
+}
+
